@@ -6,6 +6,10 @@
     font-family: 'Source Code Pro', monospace;
 }
 
+:root {
+    color-scheme: dark;
+}
+
 body{
     background-color: #fcdce9;
     color: #262626;
@@ -19,7 +23,7 @@ body{
     width: 100vw;
     height: 100vh;
     transition: 1s;
-    background-color: black;
+    background-color: #262626;
     color: #fcdce9;
     font-size: 25px;
     font-family: 'Source Code Pro', monospace;
@@ -138,11 +142,6 @@ body{
     transform: scale(1);
     position: absolute;
     margin-top:5px;
-}
-
-  
-img:hover, img:focus {
-    transform: scale(4);
 }
 
 .image-space{
@@ -301,6 +300,10 @@ img:hover, img:focus {
         font-size: 15px;
     }
 
+    img:hover, img:focus {
+        transform: scale(6);
+    }
+
 }
 
 @media only screen and (min-width: 760px) {
@@ -334,5 +337,9 @@ img:hover, img:focus {
 
     .email-down{
         display: none;
+    }
+
+    img:hover, img:focus {
+        transform: scale(4);
     }
 }
