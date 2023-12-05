@@ -3,12 +3,10 @@ let logoHeader = document.querySelector('.logo-header');
 let introOneText = document.querySelectorAll('.intro-one');
 let introtwoText = document.querySelectorAll('.intro-two');
 let introthreeText = document.querySelectorAll('.intro-three');
+let sectionOneDisplay = document.querySelectorAll('.section-one');
+
 
 window.addEventListener('DOMContentLoaded', () => {
-
-    console.log(intro)
-    console.log(logoHeader)
-    console.log(introOneText)
 
     setTimeout(() => {
 
@@ -62,5 +60,15 @@ window.addEventListener('DOMContentLoaded', () => {
         },2000)
 
     }, 6000)
+
+    console.log(sectionOneDisplay)
+    setTimeout(() => {
+
+        sectionOneDisplay.forEach((span, index) => {
+            setTimeout(() => {
+                span.classList.add('active');
+            }, (index + 1 ) * 400 )
+        })
+    }, 8000)
 
 })
