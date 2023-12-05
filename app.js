@@ -72,3 +72,41 @@ window.addEventListener('DOMContentLoaded', () => {
     }, 8000)
 
 })
+
+function reveal() {
+    var reveals = document.querySelectorAll("#reveal");
+    var sectionOne = document.querySelector(".section-one");
+    var emailDown = document.querySelector(".email-down")
+    var emailMiddleDown = document.querySelector(".email-down-middle")
+    var sectionOneTop = sectionOne.getBoundingClientRect().top;
+
+    console.log(sectionOneTop)
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+
+    if(sectionOneTop < -150)
+    {
+        console.log("active")
+        emailDown.classList.add("active");
+        emailMiddleDown.classList.add("active")
+    }
+    else if(sectionOneTop > -150)
+    {
+        console.log("remove")
+        emailDown.classList.remove("active");
+        emailMiddleDown.classList.remove("active")
+    }
+  }
+
+window.addEventListener("scroll", reveal);
+reveal();

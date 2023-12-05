@@ -152,11 +152,17 @@ img:hover, img:focus {
 /* disable section animation */
 .section-one{
     position: relative;
-    /* opacity: 0; 
-    bottom: -20px; */
+    opacity: 0; 
+    bottom: -20px;
 }
 
 .section-one.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.section-two.active{
     bottom: 0;
     opacity: 1;
     transition: ease-in-out 0.5s;
@@ -229,20 +235,69 @@ img:hover, img:focus {
 
     .section-two{
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        opacity: 0;
     }
 
     .container{
         width: 90%;
-        height: 100vh;
+        height: 80vh;
         margin-top: 20vh;
     }
     
     .about-content{
         margin-top: 30px;
+        font-size: 20px;
+    }
+
+    .email-down{
+        position: fixed;
+        width: 100%;
+        height: 150px;
+        left: 0;
+        opacity: 0;
+        bottom: 0;
+        transition: ease-in-out 0.5s;
+    }
+
+    .email-down.active{
+        opacity: 1;
+        transition: ease-in-out 0.5s;
+    }
+
+    .email-down.fade{
+        opacity: 0;
+        transition: ease-in-out 0.5s;
+    }
+
+    .email-down-middle{
+        position: absolute;
+        bottom: -20px;
+        width: 100%;
+        height: auto;
+        transform: scale(0.8);
+        transition: ease-in-out 0.5s;
+    }
+
+    .email-down-middle.active{
+        bottom: 30px;
+        transition: ease-in-out 0.5s;
+        transform: scale(1);
+    }
+
+    .email-down-inner{
+        width: 150px;
+        height: 70px;
+        border-radius: 100px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        color: #fcdce9;
+        background-color: #3b3b3b;
         font-size: 20px;
     }
 
@@ -274,5 +329,10 @@ img:hover, img:focus {
         display: flex;
         justify-content: left;
         align-items: center;
+        opacity: 0;
+    }
+
+    .email-down{
+        display: none;
     }
 }
