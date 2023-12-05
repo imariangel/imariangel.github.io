@@ -239,6 +239,7 @@ body{
         justify-content: center;
         align-items: center;
         opacity: 0;
+        transition: ease-in-out 0.5s;
     }
 
     .container{
@@ -333,6 +334,7 @@ body{
         justify-content: left;
         align-items: center;
         opacity: 0;
+        transition: ease-in-out 0.5s;
     }
 
     .email-down{
