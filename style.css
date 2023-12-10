@@ -246,7 +246,7 @@ body{
 
     .section-two{
         width: 100%;
-        height: 90vh;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -256,8 +256,8 @@ body{
 
     .container{
         width: 90%;
-        height: 80vh;
-        margin-top: 20vh;
+        height: auto;
+        margin-bottom: 50px;
     }
     
     .about-content{
@@ -331,19 +331,23 @@ body{
         border-radius: 20px;
     }
 
+    .section-three{
+        width: 100%;
+        height: auto;
+    }
+
     .img-container{
         width: 100%;
         height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
     }
 
     .section-four{
         width: 100%;
-        height: 300px;
-        padding-top: 200px;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -353,12 +357,13 @@ body{
 
     .section-five{
         width: 100%;
-        height: 500px;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         opacity: 0;
         transition: ease-in-out 0.5s;
+        margin-bottom: 100px;
     }
 
 }
