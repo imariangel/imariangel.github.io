@@ -342,7 +342,8 @@ body{
 
     .section-four{
         width: 100%;
-        height: 700px;
+        height: 300px;
+        padding-top: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -352,7 +353,7 @@ body{
 
     .section-five{
         width: 100%;
-        height: 700px;
+        height: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
